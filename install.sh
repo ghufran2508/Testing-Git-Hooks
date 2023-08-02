@@ -1,5 +1,7 @@
 #!/bin/sh
 
+npm install
+
 echo "import {Hello} from 'Hello'" | tee index.js >/dev/null
 
 
@@ -17,5 +19,15 @@ fi
 exit 0' | tee .git/hooks/pre-push >/dev/null
 
 chmod +x .git/hooks/pre-push
+
+npm init @eslint/config
+yes
+yes
+yes
+yes
+ayes
+yes
+yes
+yes
 
 echo "Done"

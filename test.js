@@ -4,7 +4,6 @@
  */
 function helloWorld() {
   console.log('Hello');
-  let x = 0;
 }
 
 helloWorld();
