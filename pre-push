@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Check for linting errors
+eslint --format=stylish.js .
+
+if [ "$?" -ne 0 ]; then
+  echo "Linting errors found. Aborting push."
+  exit 1
+fi
+
+# Continue with the push
+exit 0
