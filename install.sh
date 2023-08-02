@@ -21,13 +21,5 @@ exit 0' | tee .git/hooks/pre-push >/dev/null
 chmod +x .git/hooks/pre-push
 
 npm init @eslint/config
-yes
-yes
-yes
-yes
-ayes
-yes
-yes
-yes
 
 echo "Done"
